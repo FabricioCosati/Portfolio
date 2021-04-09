@@ -1,0 +1,103 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <div class="container home">
+        <div class="info-container">
+
+            <div class="about">
+                <div class="photo-image">
+                    <img src="images/me.jpg" alt="">
+                </div>
+
+                <div class="about-text">
+                    <h1>Sobre mim</h1>
+                    <h2>Sou um desenvolvedor iniciante da cidade de Belo Horizonte, Minas Gerais.</h2>
+                    <p>Eu gosto de desenvolver pequenos projetos para implementar o que eu vou aprendendo, seja sobre o back-end ou front-end. Quando não estou programando, eu devo estar jogando, assistindo séries ou vendo programas culinários.</p>
+                    {# <p>
+                        - Meu Nome <br>
+                        - Minha cidade <br>
+                        - O que gosto de fazer <br>
+                        - Experiências que eu gostaria de compartilhar <br>
+                        - Mais detalhes caso queira 
+                    </p> #}
+                </div>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="curriculum">
+                <h2>Conhecimentos</h2>
+                <div class="knowledge">
+                    <ul>
+                        <li><img src="/images/java-icon.svg" alt="">Java</li>
+                        <li><img src="/images/javascript-icon.svg" alt="">JavaScript</li>
+                        <li><img src="/images/html5-icon.svg" alt="">HTML5</li>
+                        <li><img src="/images/css3-icon.svg" alt="">CSS3</li>
+                        <li><img src="/images/nodejs-icon.svg" alt="">Node.Js</li>
+                        <li><img src="/images/postgresql-icon.svg" alt="">PostgreSQL</li>
+                        <li><img src="/images/mysql.svg" alt="">MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <h2>Projetos</h2>
+
+            <div class="project">
+                <h3>FoodFy</h3>
+                <div class="projects-container">
+
+                    <button class="project-button previous" id="previous">
+                        <i class="material-icons">chevron_left</i>
+                    </button>
+
+                    <div class="project-images">
+
+                        <img src="/images/foodfy1.png" alt="">
+
+                        <img src="/images/foodfy2.png" alt="">
+
+                        <img src="/images/foodfy3.png" alt="">
+
+                        <img src="/images/foodfy4.png" alt="">
+
+                    </div>
+
+                    <button class="project-button next" id="next">
+                        <i class="material-icons">chevron_right</i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Ecommerce</h3>
+                <div class="projects-container">
+
+                    <button class="project-button previous" id="previous">
+                        <i class="material-icons">chevron_left</i>
+                    </button>
+
+                    <div class="project-images">
+
+                        <img src="/images/ecommerce1.png" alt="">
+
+                        <img src="/images/ecommerce2.png" alt="">
+
+                        <img src="/images/ecommerce3.png" alt="">
+
+                        <img src="/images/ecommerce4.png" alt="">
+
+                        <img src="/images/ecommerce5.png" alt="">
+
+                    </div>
+
+                    <button class="project-button next" id="next">
+                        <i class="material-icons">chevron_right</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

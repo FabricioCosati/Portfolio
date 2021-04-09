@@ -1,0 +1,97 @@
+/* === GLOBAL === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+
+    font-size: 1rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: overlay;
+
+    font-family: 'Roboto Slab', sans-serif;
+
+    background-color: #100c1a;
+
+}
+
+body, html {
+    min-height: 100vh;
+}
+
+h2 {
+    color: #ebebeb;
+    font-size: 1.8rem;
+
+    margin-bottom: 1.4rem;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 56.25rem; /* 900 px*/
+}
+
+/* === HEADER / FOOTER === */
+
+header, footer {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 2rem 0;
+
+    background-color: #1b1a22;
+}
+
+footer {
+    color: #b4b4b4;
+
+    margin-top: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.container .name-profession-container {
+    margin-right: 2rem;
+
+    color: #b4b4b4;
+}
+
+.container .name-profession-container h2 {
+    font-size: 2.6rem;
+}
+
+.container .name-profession-container p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.container .header-navigation ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+}
+
+.container .header-navigation ul li a {
+
+    color: #acacac;
+
+    transition: color .25s;
+}
+
+.container .header-navigation ul li a:hover {
+    color: white;
+}
