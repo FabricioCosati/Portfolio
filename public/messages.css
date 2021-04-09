@@ -1,0 +1,33 @@
+.messages {
+    text-align: center;
+    
+    width: 100%;
+
+    padding: 1rem 1rem;
+
+    color: white;
+    font-weight: bold;
+
+    top: 0;
+    position: fixed;
+
+    opacity: 1;
+    animation: hideMessage .4s ease-in 5s forwards;
+
+    z-index: 1000;
+}
+
+.messages.error {
+    background-color: #f54949;
+}
+
+.messages.success {
+    background-color: #1aa71a;
+}
+
+@keyframes hideMessage {
+    to {
+        top: -50px;
+        opacity: 0;
+    }
+}

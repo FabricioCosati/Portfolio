@@ -1,27 +1,30 @@
-<header id="header">
-    <div class="container">
+{% if session.user %}
+    <header id="header">
+        <div class="container">
 
-        <div class="name-profession-container">
-            <h2>Fabrício Cosati</h2>
+            <div class="name">
+                <a onclick="Scroll.scrollProfile()">Fabrício Cosati</a>
+            </div>
 
-            <p>Desenvolvedor Estagiário</p>
+            <nav class="header-navigation">
+                <ul>
+                    <li>
+                        <a onclick="Scroll.scrollProjects()">Projetos</a>
+                    </li>
+                    <li>
+                        <a onclick="Scroll.scrollCurriculum()">Currículo</a>
+                    </li>
+                    <li>
+                        <a onclick="Scroll.scrollFooter()">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logout">
+                <form action="/logout" method="POST">
+                    <button class="logout-button" type="submit">Sair</button>
+                </form>
+            </div>
         </div>
-
-        <nav class="header-navigation">
-            <ul>
-                <li>
-                    <a onclick="Scroll.scrollProfile()">Perfíl</a>
-                </li>
-                <li>
-                    <a onclick="Scroll.scrollProjects()">Projetos</a>
-                </li>
-                <li>
-                    <a onclick="Scroll.scrollCurriculum()">Currículo</a>
-                </li>
-                <li>
-                    <a onclick="Scroll.scrollFooter()">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
+{% endif %}

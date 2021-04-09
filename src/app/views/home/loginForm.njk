@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <div class="container form">
+
+        <div class="form-header">
+            <h2>Login</h2>
+        </div>
+
+        <div class="form-container">
+            <form id="login-form" action="/login" method="POST">
+
+                <div class="input">
+                    <div>Usuário</div>
+                    <input type="text" name="name" placeholder="Seu nome de usuário" value="{{user.name}}">
+                </div>
+
+                <div class="input">
+                    <div>Senha</div>
+                    <input type="password" name="password" placeholder="Sua senha">
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content%}

@@ -1,7 +1,7 @@
 const Scroll = {
 
     scrollProfile() {
-        document.getElementById("info3").scrollIntoView({ block: 'center', behavior: 'smooth' })
+        document.getElementById("info1").scrollIntoView({ block: 'center', behavior: 'smooth' })
     },
 
     scrollFooter() {
@@ -26,7 +26,7 @@ const header = document.getElementById("header");
 const sticky = header.offsetTop;
 
 function myFunction() {
-    if (window.pageYOffset > sticky) {
+    if (window.pageYOffset > 40) {
         header.classList.add("sticky");
     } else {
         header.classList.remove("sticky");

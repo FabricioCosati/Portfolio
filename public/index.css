@@ -33,6 +33,24 @@ h2 {
     margin-bottom: 1.4rem;
 }
 
+input {
+    width: 100%;
+
+    padding: .5rem 1rem;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    box-shadow: 3px 3px 4px 0px rgb(39 39 39);
+
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    font-size: 1.2rem;
+}
+
 a {
     cursor: pointer;
 }
@@ -53,39 +71,38 @@ header, footer {
     padding: 2rem 0;
 
     background-color: #1b1a22;
+
+}
+
+#header {
+    position: fixed;
+
+    transition: padding .3s;
 }
 
 .sticky {
     width: 100%;
-
-    position: fixed;
-    top: 0;
-    
     z-index: 999;
-
-    transition: all 4s;
+    padding: 1rem;
 }
 
 header .container {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container .name-profession-container {
+.container .name a {
+    color: #ebebeb;
+    font-size: 1.8rem;
+
     margin-right: 2rem;
-
-    color: #b4b4b4;
 }
 
-.container .name-profession-container h2 {
-    font-size: 2.6rem;
-}
+.container .name a {
+    font-size: 2rem;
 
-.container .name-profession-container p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: left;
+    margin-bottom: 0;
 }
 
 .container .header-navigation ul {
@@ -94,14 +111,25 @@ header .container {
     column-gap: 1.5rem;
 }
 
-.container .header-navigation ul li a {
-
-    color: #acacac;
+.container .header-navigation ul li a,
+.container .logout-button {
+    color: #acacac; 
 
     transition: color .25s;
 }
 
-.container .header-navigation ul li a:hover {
+.container .logout-button {
+    font-family: 'Roboto Slab', sans-serif;
+
+    background: none;
+
+    cursor: pointer;
+
+    margin-left: 2rem;
+}
+
+.container .header-navigation ul li a:hover,
+.container .logout-button:hover {
     color: white;
 }
 
