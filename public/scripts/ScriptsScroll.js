@@ -1,6 +1,10 @@
 const Scroll = {
 
-    scrollProfile() {
+    scrollTop() {
+        document.getElementById("info").scrollIntoView({ block: 'center', behavior: 'smooth' })
+    },
+
+    scrollAbout(){
         document.getElementById("info1").scrollIntoView({ block: 'center', behavior: 'smooth' })
     },
 
@@ -16,7 +20,7 @@ const Scroll = {
     },
 
     scrollProjects() {
-        document.getElementById("info3").scrollIntoView({ block: 'center', behavior: 'smooth' })
+        document.querySelector("#info3 h3").scrollIntoView({ block: 'center', behavior: 'smooth' })
     }
 }
 

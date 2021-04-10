@@ -78,6 +78,8 @@ header, footer {
     position: fixed;
 
     transition: padding .3s;
+
+    z-index: 999;
 }
 
 .sticky {
@@ -93,6 +95,7 @@ header .container {
 }
 
 .container .name a {
+    font-family: 'Handlee', 'Roboto Slab' , sans-serif;
     color: #ebebeb;
     font-size: 1.8rem;
 
@@ -134,16 +137,41 @@ header .container {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
     color: #b4b4b4;
 
-    margin-top: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 5rem 0;
+}
+
+.footer-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.footer-container .contact-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-container .contact-card {
+    width: 20rem;
+
+    background-color: #191919;
+
+    padding: 2rem;
+
+    border-radius: 6px;
 }
 
 footer .contact-me {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -158,17 +186,27 @@ footer .contact-me {
     align-items: center;
     justify-content: center;
     
-    background: #4a4a4a8c;
+    background: #4a4a4a;
     border-radius: 50%;
 
-    margin-right: .8rem;
+    margin-bottom: .8rem;
 }
 
 .contact-me .contact-text {
-    text-align: left;
+    width: 100%;
+    
+    text-align: center;
     font-weight: 300;
 }
 
 .contact-me .contact-text p:first-child {
     font-weight: bold;
+
+    padding: .8rem 0;
+
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.contact-me .contact-text p:last-child {
+    margin: 1.5rem 0 .8rem;
 }

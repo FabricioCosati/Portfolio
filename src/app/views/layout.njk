@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNG transport - Portfólio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DNG transport - Portfólio</title>
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="messages.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="messages.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <script src="/scripts/ScriptsCarouselProjects.js" defer></script>
-    <script src="/scripts/ScriptsScroll.js" defer></script>
-</head>
-<body>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    {% include "parts/messages.njk" %}
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 
-    {% include "parts/header.njk" %}
+        <script src="/scripts/ScriptsCarouselProjects.js" defer="defer"></script>
+        <script src="/scripts/ScriptsScroll.js" defer="defer"></script>
+    </head>
+    <body>
 
-    {% block content %}
-    {% endblock content %}
+        {% include "parts/messages.njk" %}
 
-    {% include "parts/footer.njk" %}
-    
-</body>
+        {% include "parts/header.njk" %}
+
+        {% block content %}{% endblock content %}
+
+        {% include "parts/footer.njk" %}
+
+    </body>
 </html>
