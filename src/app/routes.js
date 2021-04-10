@@ -7,7 +7,7 @@ const HomeValidator = require("./validators/HomeValidator")
 
 const  session = require("./middlewares/session")
 
-router.get("/", HomeController.loginForm)
+router.get("/", session.isLogged, HomeController.loginForm)
 router.get("/home", session.onlyUser, HomeController.home)
 router.post("/login", HomeValidator.login, HomeController.login)
 router.post("/logout", HomeController.logout)

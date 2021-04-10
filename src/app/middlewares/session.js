@@ -15,5 +15,20 @@ module.exports = {
         } catch (error) {
             console.error(error)
         }
+    },
+
+    isLogged(req, res, next){
+
+        try {
+
+            if(req.session.user){
+                return res.redirect("/home")
+            }
+
+            next()
+            
+        } catch (error) {
+            console.error(error)
+        }
     }
 }
