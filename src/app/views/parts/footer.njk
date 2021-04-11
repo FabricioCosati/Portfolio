@@ -1,8 +1,8 @@
 {% if session.user %}
-    <footer style="background-image: url(images/dot-map.jpg);">
-        <div class="footer-container">
+    <div class="contact-container" style="background-image: url(images/dot-map.jpg);">
+        <div class="contacts">
 
-            <div class="contact-container">
+            <div class="contact-wrapper">
 
                 <div class="contact-card">
                     <div class="contact-me">
@@ -39,8 +39,14 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
+    </div>
+
+    <footer class="links">
+        <div class="links-container">
+            <a href="https://www.linkedin.com/in/fabrício-cosati-973a69180/" target="_blank"><img src="images/linkedin-icon.png" target="_blank" alt="Logo do Linkedin"></a>
+            <a href="https://github.com/FabricioCosati" target="_blank"><img src="images/github-icon.png" " alt="Logo do Github"></a>
         </div>
     </footer>
 {% endif %}

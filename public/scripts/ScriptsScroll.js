@@ -4,7 +4,7 @@ const Scroll = {
         document.getElementById("info").scrollIntoView({ block: 'center', behavior: 'smooth' })
     },
 
-    scrollAbout(){
+    scrollAbout() {
         document.getElementById("info1").scrollIntoView({ block: 'center', behavior: 'smooth' })
     },
 
@@ -20,8 +20,18 @@ const Scroll = {
     },
 
     scrollProjects() {
-        document.querySelector("#info3 h3").scrollIntoView({ block: 'center', behavior: 'smooth' })
+        document.querySelector("#info3 .project-wrapper").scrollIntoView({ block: 'center', behavior: 'smooth' })
     }
+}
+
+window.onload = backTopOnRefresh()
+
+function backTopOnRefresh() {
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    window.scrollTo(0, 0);
 }
 
 window.onscroll = function () { myFunction() };

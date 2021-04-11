@@ -41,24 +41,8 @@
 
 #login-form .button-container button {
     width: 100%;
-    
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: white;
-    
+
     background-color: #1b1a22;
-
-    padding: .8rem 2.5rem;
-
-    text-transform: uppercase;
-
-    border-radius: .5rem;
-
-    outline: none;
-
-    cursor: pointer;
-
-    transition: background-color .2s;
 }
 
 #login-form .button-container button:hover {

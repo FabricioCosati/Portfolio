@@ -26,7 +26,7 @@ module.exports = {
                 return res.render("home/loginForm", verifyAllFields)
             }
 
-            if(name != "fabricio" || password != "1234"){
+            if(name != "administradordng" || password != "processoseletivo"){
                 return res.render("home/loginForm", {
                     user: req.body,
                     error: "Nome de usuário ou senha inválidos, tente novamente."
