@@ -12,4 +12,4 @@ Para inicar o projeto, é preciso ter o Node instalado na máquina e então no t
 
 ## Acessando o Portfolio
 
-Para acessar o portfolio digita como usuário `administradordng` e a senha `processoseletivo`
+Para acessar o portfolio, digite como usuário `administradordng` e a senha `processoseletivo`
