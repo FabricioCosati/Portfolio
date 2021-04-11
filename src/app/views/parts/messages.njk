@@ -1,11 +1,11 @@
-{% if error %}
+{% if error or message.error %}
     <div class="messages error">
-        {{error}}
+        {{error or message.error}}
     </div>
 {% endif %}
 
-{% if success %}
+{% if success or message.success %}
     <div class="messages success">
-        {{success}}
+        {{success or message.success}}
     </div>
 {% endif %}

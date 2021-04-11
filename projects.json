@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "name": "FoodFy",
+            "subtitle": "Loja de restaurante online",
+            "images": ["foodfy1.png", "foodfy2.png", "foodfy3.png", "foodfy4.png"],
+            "description": "Este trabalho foi uma forma de colocar em prática o que venho aprendendo, fazendo um projeto existente de uma rede de restaurantes chamada FoodFy.",
+            "github": "https://github.com/FabricioCosati/FoodFy_Restaurant",
+            "page": ""
+        },
+        {
+            "name": "Ecommerce",
+            "subtitle": "Loja Ecommerce online",
+            "images": ["ecommerce1.png", "ecommerce2.png", "ecommerce3.png", "ecommerce4.png"],
+            "description": "Neste trabalho aprendi a como trabalhar com Express Session junto com um banco de dados, é um projeto existente de uma loja virtual Ecommerce.",
+            "github": "https://github.com/FabricioCosati/ecommerce_rocketseat",
+            "page": ""
+        },
+        {
+            "name": "Dev Finance",
+            "subtitle": "Aplicativo para controle financeiro",
+            "images": ["devfinances1.png", "devfinances2.png", "devfinances3.png", "devfinances4.png"],
+            "description": "Este é um pequeno sistema financeiro feito com HTML5, CSS3 e JAVASCRIPT na maratona Discover da Rocketseat.",
+            "github": "https://github.com/FabricioCosati/Dev_Finances_Rocketseat",
+            "page": "https://fabriciocosati.github.io/Dev_Finances_Rocketseat/#"
+        }
+    ]
+}

@@ -168,6 +168,131 @@
 
 /* === PROJECTS === */
 
+.carousel-container {
+    height: 70vh;
+
+    position: relative;
+
+    margin: auto;
+    overflow: hidden;
+
+    border-radius: 6px;
+}
+
+.carousel-container .carousel-slide {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+.carousel-container .carousel-slide input {
+    display: none
+}
+
+.carousel-container .carousel-slide .slide {
+    min-width: 100%;
+
+    position: relative;
+
+    transition: 3s;
+}
+
+.carousel-container .carousel-slide .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-container .navigation-manual {
+    width: 100%;
+
+    position: absolute;
+
+    top: 90%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container .navigation-manual .manual-btn {
+    padding: .4125rem;
+
+    border: 2px solid #100c1a;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.carousel-container .navigation-manual .manual-btn:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+.carousel-container .navigation-manual .manual-btn:hover {
+    background: #100c1a;
+}
+
+/* MANUAL BUTTONS */
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+
+.navigation-auto {
+    width: 100%;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+
+    top: 90%;
+}
+
+.navigation-auto div {
+    border: 2px solid #100c1a;
+    border-radius: 10px;
+
+    padding: .4125rem;
+    
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+/* AUTOMATIC BUTTONS */
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #100c1a
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #100c1a
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #100c1a
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #100c1a
+}
+
 .project-container {
     height: 70vh;
 

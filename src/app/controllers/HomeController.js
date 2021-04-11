@@ -1,3 +1,5 @@
+const data = require("../../../projects.json")
+
 function hasMessages(req) {
 
     let { success, error } = req.session
@@ -21,10 +23,11 @@ module.exports = {
 
     home(req, res) {
         try {
-
             const message = hasMessages(req)
-
-            return res.render("home/index", message)
+            return res.render("home/index", {
+                projects: data.projects,
+                message
+            })
 
         } catch (error) {
             console.error(error)
