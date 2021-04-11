@@ -313,9 +313,16 @@
 }
 
 .repository-link {
+    display: flex;
+    flex-direction: column;
+
     margin: 1.5rem 0;
 
     text-align: center;
+}
+
+.repository-link  a {
+    margin-bottom: 1rem;
 }
 
 .project a {    
