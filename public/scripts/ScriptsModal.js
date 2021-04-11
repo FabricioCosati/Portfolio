@@ -56,7 +56,6 @@ const Modal = {
                 Modal.projectsArray.push(project)
                 project.remove()
             }
-            console.log(project)
         })         
         
     }
