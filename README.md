@@ -4,7 +4,7 @@ Este é um portfolio criado para o processo seletivo da DNG Transportes
 
 ## O que foi utilizado
 
-Neste portfolio foi utilizado `HTML5`, `CSS3` e usamos também `javascript` com `node.js` para construir a funcionalidade de login do site
+Neste portfolio utilizei `HTML5`, `CSS3` e também `javascript` com `node.js` para construir a funcionalidade de login do site. Também deixei (ao menos tentei) o site responsivo para alguns dispositivos mobile.
 
 ## Como iniciar
 
