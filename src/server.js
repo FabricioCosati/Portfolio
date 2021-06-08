@@ -18,7 +18,7 @@ server.use((req, res, next) =>{
     res.locals.session = req.session
     
     next()
-})
+}) 
 
 server.set("view engine", "njk")
 

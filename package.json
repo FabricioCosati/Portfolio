@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "nodemon": "nodemon src/server.js",
+    "start": "node src/server",
+    "nodemon": "nodemon src/server",
     "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
   },
   "keywords": [],
